@@ -1,0 +1,17 @@
+INPUT(
+./release\main.o
+./release\mainwindow.o
+./release\luaparser.o
+./release\filelistmodel.o
+./release\loadfunction.o
+./release\appearence.o
+./release\funcslistmodel.o
+./release\appslistmodel.o
+./release\appsfuncproplistmodel.o
+./release\moc_mainwindow.o
+./release\moc_luaparser.o
+./release\moc_filelistmodel.o
+./release\moc_funcslistmodel.o
+./release\moc_appslistmodel.o
+./release\moc_appsfuncproplistmodel.o
+);

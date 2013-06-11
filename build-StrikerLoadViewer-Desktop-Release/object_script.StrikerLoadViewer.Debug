@@ -1,0 +1,17 @@
+INPUT(
+./debug\main.o
+./debug\mainwindow.o
+./debug\luaparser.o
+./debug\filelistmodel.o
+./debug\loadfunction.o
+./debug\appearence.o
+./debug\funcslistmodel.o
+./debug\appslistmodel.o
+./debug\appsfuncproplistmodel.o
+./debug\moc_mainwindow.o
+./debug\moc_luaparser.o
+./debug\moc_filelistmodel.o
+./debug\moc_funcslistmodel.o
+./debug\moc_appslistmodel.o
+./debug\moc_appsfuncproplistmodel.o
+);
