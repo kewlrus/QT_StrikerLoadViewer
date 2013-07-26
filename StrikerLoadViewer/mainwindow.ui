@@ -30,9 +30,9 @@
     <property name="geometry">
      <rect>
       <x>10</x>
-      <y>100</y>
+      <y>130</y>
       <width>361</width>
-      <height>181</height>
+      <height>151</height>
      </rect>
     </property>
    </widget>
@@ -45,14 +45,17 @@
       <height>91</height>
      </rect>
     </property>
+    <property name="contextMenuPolicy">
+     <enum>Qt::CustomContextMenu</enum>
+    </property>
    </widget>
    <widget class="QListView" name="AppearencesListView">
     <property name="geometry">
      <rect>
       <x>390</x>
-      <y>100</y>
+      <y>130</y>
       <width>351</width>
-      <height>181</height>
+      <height>151</height>
      </rect>
     </property>
    </widget>
@@ -86,6 +89,114 @@
     </property>
     <property name="text">
      <string>Choose Folder</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="FilterLabel">
+    <property name="geometry">
+     <rect>
+      <x>390</x>
+      <y>100</y>
+      <width>46</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Filter:</string>
+    </property>
+   </widget>
+   <widget class="QComboBox" name="FilterComboBox">
+    <property name="geometry">
+     <rect>
+      <x>430</x>
+      <y>100</y>
+      <width>231</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <property name="editable">
+     <bool>true</bool>
+    </property>
+    <item>
+     <property name="text">
+      <string/>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>_G.STATE_IDLE</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>_G.STATE_WALK</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>_G.STATE_DEAD</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>_G.STATE_FIRE</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>_G.STATE_CUSTOM</string>
+     </property>
+    </item>
+   </widget>
+   <widget class="QLabel" name="FilterLabel_2">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>100</y>
+      <width>46</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Filter:</string>
+    </property>
+   </widget>
+   <widget class="QComboBox" name="FilterFuncComboBox">
+    <property name="geometry">
+     <rect>
+      <x>50</x>
+      <y>100</y>
+      <width>241</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <property name="editable">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="ClearFuncFilterButton">
+    <property name="geometry">
+     <rect>
+      <x>300</x>
+      <y>100</y>
+      <width>71</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Clear</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="ClearAppFilterButton">
+    <property name="geometry">
+     <rect>
+      <x>670</x>
+      <y>100</y>
+      <width>71</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Clear</string>
     </property>
    </widget>
   </widget>

@@ -1,6 +1,6 @@
 #include "filelistmodel.h"
 
-ListModel::ListModel(QObject *parent, QStringList* LuaFiles): QAbstractTableModel(parent)
+ListModel::ListModel(QObject *parent, QStringList* LuaFiles): VirtualListModel(parent)
 {
     List = LuaFiles;
   //  connect(this,SIGNAL())
@@ -30,9 +30,25 @@ QVariant ListModel::data(const QModelIndex &index, int role) const
     return QVariant();
 }
 
+void ListModel::DeleteItem(int index)
+{
+    //List->erase(index);
+}
+
+
+void ListModel::AddData(QString Text)
+{
+
+}
+
  /*void ListModel::currentChanged(const QModelIndex & current, const QModelIndex & previous)
  {
      //printf("asd");
      QMessageBox::information(0, "error", "asdasd");
 
  };*/
+
+void ListModel::Refresh()
+{
+
+}

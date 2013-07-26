@@ -20,6 +20,7 @@ void LoadFunction::AddAppearence(QString AppearenceName, QString AppearenceConst
         AppearencesList.append(AP);
     }
 }
+
 void LoadFunction::AddFuncProp(QString Prop)
 {
     (*Props) << Prop;
@@ -58,13 +59,18 @@ int LoadFunction::GetAppIndexByName(QString AppearenceName)
     return -1;
 }
 
+void LoadFunction::SetName(QString Name)
+{
+    FunctionName = Name;
+}
+
 QString LoadFunction::GetName(void)
 {
     return FunctionName;
 }
 
 
-QList<Appearence* > LoadFunction::GetApps(void)
+QList<Appearence* >* LoadFunction::GetApps(void)
 {
-    return AppearencesList;
+    return &AppearencesList;
 }

@@ -23,6 +23,7 @@ public:
     QStringList* GetProps(void);
     QStringList* GetFuncs(void);
 
+    void    SetName(QString Name);
     QString GetName(void);
 };
 

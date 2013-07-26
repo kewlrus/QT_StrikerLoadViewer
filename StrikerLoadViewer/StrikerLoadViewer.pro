@@ -21,7 +21,13 @@ SOURCES += main.cpp\
     appearence.cpp \
     ListModels/funcslistmodel.cpp \
     ListModels/appslistmodel.cpp \
-    ListModels/appsfuncproplistmodel.cpp
+    ListModels/appsfuncproplistmodel.cpp \
+    contextmenu.cpp \
+    ListModels/virtuallistmodel.cpp \
+    Forms/newfiledialog.cpp \
+    Forms/addeditappearence.cpp \
+    Forms/addeditappprop.cpp \
+    Forms/addeditfunction.cpp
 
 HEADERS  += mainwindow.h \
     luaparser.h \
@@ -30,6 +36,16 @@ HEADERS  += mainwindow.h \
     appearence.h \
     ListModels/funcslistmodel.h \
     ListModels/appslistmodel.h \
-    ListModels/appsfuncproplistmodel.h
+    ListModels/appsfuncproplistmodel.h \
+    contextmenu.h \
+    ListModels/virtuallistmodel.h \
+    Forms/newfiledialog.h \
+    Forms/addeditappearence.h \
+    Forms/addeditappprop.h \
+    Forms/addeditfunction.h
 
-FORMS    += mainwindow.ui
+FORMS    += mainwindow.ui \
+    Forms/newfiledialog.ui \
+    Forms/addeditappearence.ui \
+    Forms/addeditappprop.ui \
+    Forms/addeditfunction.ui

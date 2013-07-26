@@ -20,11 +20,13 @@ public:
     void AddFuncProp(QString Prop);
 
     QString GetName(void);
+    void    SetName(QString Name);
+
 
     int GetAppIndexByName(QString AppearenceName);
 
 
-    QList<Appearence* > GetApps(void);
+    QList<Appearence* >* GetApps(void);
 };
 
 #endif // LOADFUNCTION_H

@@ -22,6 +22,10 @@ void Appearence::AddFunc(QString Func)
    // qDebug("FuncsCount %d", Funcs->size());
 }
 
+void Appearence::SetName(QString Name)
+{
+    AppearenceName = Name;
+}
 
 QString Appearence::GetName(void)
 {

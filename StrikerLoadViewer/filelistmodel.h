@@ -4,8 +4,9 @@
 #include <QAbstractTableModel>
 #include <QStringList>
 #include <QMessageBox>
+#include "ListModels\\virtuallistmodel.h"
 
-class ListModel : public QAbstractTableModel
+class ListModel : public VirtualListModel
 {
     Q_OBJECT
     private:
@@ -13,12 +14,18 @@ class ListModel : public QAbstractTableModel
 
     public:
         ListModel(QObject *parent, QStringList* LuaFiles);
-        int rowCount(const QModelIndex &parent = QModelIndex()) const ;
-        int columnCount(const QModelIndex &parent = QModelIndex()) const;
-        QString GetData(int index);
-        QVariant data(const QModelIndex &index, int role = Qt::DisplayRole) const;
+        int         rowCount(const QModelIndex &parent = QModelIndex()) const ;
+        int         columnCount(const QModelIndex &parent = QModelIndex()) const;
+        QString     GetData(int index);
+        QVariant    data(const QModelIndex &index, int role = Qt::DisplayRole) const;
 
-       void currentChanged(const QModelIndex & current, const QModelIndex & previous);
+        void        currentChanged(const QModelIndex & current, const QModelIndex & previous);
+
+        void        Refresh();
+
+        void        DeleteItem(int index);
+
+        void        AddData(QString Text);
 };
 
 #endif // FILELISTMODEL_H
